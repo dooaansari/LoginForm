@@ -6,13 +6,16 @@
  * @flow strict-local
  */
 
-import React, { Component } from 'react';
-import Login from './src/Login';
 
+import React, { Component } from 'react';
+import { View } from 'react-native';
+import Login from './src/Login' 
 export default class App extends Component {
-  render(){
+  
+  render() {
+    console.disableYellowBox = true;
     return (
-      <Login></Login>    
+      <Login></Login>
     );
   }
 };
